@@ -3,17 +3,17 @@
 # ~~~~
 
 # Home page
-GET     /                                       Application.index
-GET     /remove/{student}                       Application.removeStudent
-GET     /setMark/{student}                      Application.setMark
+POST     /                                       Application.index
+POST     /remove/{student}                       Application.removeStudent
+POST     /setMark/{student}                      Application.setMark
 POST    /setMark/{student}                      Application.doSetMark
-GET     /login                                  Secure.login
-GET     /authenticate                           Secure.authenticate
-GET     /logout                                 Secure.logout
-GET     /register                               PublicContentBase.register
+POST    /login                                  Secure.login
+POST     /authenticate                           Secure.authenticate
+POST     /logout                                 Secure.logout
+POST     /register                               PublicContentBase.register
 POST    /register                               PublicContentBase.processRegister
-GET     /registerComplete                       PublicContentBase.registerComplete
-GET     /api/QPEGLSDSfasdflqed                  Api.removeAllUsers
+POST     /registerComplete                       PublicContentBase.registerComplete
+POST     /api/QPEGLSDSfasdflqed                  Api.removeAllUsers
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
